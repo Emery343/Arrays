@@ -18,22 +18,21 @@ public class RenameThisClass
         boolean stringsEqual = (string1 == string3);
         System.out.println(stringsEqual);
         String[ ] strArray = {"Alpha", "Bravo", "Charlie", "Delta","Echo"};
-    for (int i = 0; i < strArray.length; i++) {
-        System.out.println(strArray[i]);
-    }
-    for (String value : strArray) {
-        System.out.print(value);
-    }
-    for (int i = 4; i < strArray.length; i++) {
-        System.out.println("  ");
-    }
-    for (int i = 0; i < 5; i++) {
-        if (i == 4) {
-            System.out.print(strArray[i]);
-            break;
+        for (int i = 0; i < strArray.length; i++) {
+            System.out.println(strArray[i]);
         }
-        else 
-         System.out.print(strArray[i] + "-");
-    }
+        for (String value : strArray) {
+            System.out.print(value);
+        }
+        for (int i = 4; i < strArray.length; i++) {
+            System.out.println("  ");
+        }
+        for (int i = 0; i < strArray.length; i++) {
+            if (i == strArray.length-1) {
+                System.out.print(strArray[i]);
+            }
+            else 
+                System.out.print(strArray[i] + "-");
+        }
     }
 }
